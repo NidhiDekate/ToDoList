@@ -1,13 +1,102 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'League Script', cursive;
+  color: #804000;
+  font-size: 15px;
+}
+.main_div{
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  padding-bottom: 50px;
+  background:#ffffff;
+}
+.center_div{
+  width: 380px;
+  height: 500px;
+  overflow: auto;
+  padding: 20px;
+  padding-left: 30px;
+  text-align: center;
+  background-image: url("./images/img_2.jpg");
+  background-size: cover;
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px grey;
+}
+.heading{
+  font-weight: bold;
+  font-size: 45px;
+  text-decoration: underline;
+}
+.inputFeild{
+  width: 200px;
+  border-radius: 20px;
+  border: none;
+  height: 30px;
+}
+.inputFeild:focus {
+  outline: none;
+  box-shadow: none;
+}
+.inputbtn{
+  background: white;
+  border-radius: 50%;
+  width: 35px;
+  height: 30px;
+  border: none;
+  margin-left:3px ;
+  padding:2px;
+}
+.inputbtn:hover{
+  cursor: pointer;
+}
+.inputbtn:focus {
+  outline: none;
+  box-shadow: none;
+}
+.center_div ol li{
+  text-align: left;
+  margin: 10px;
+}
+.center_div ol li:hover{
+  text-decoration: underline;
+}
+.fa-times{
+  float: right;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.fa-times:hover {
+  color: #ff9f80;
+  cursor: pointer;
+  
+}
+.todointro{
+  display: block;
+  padding: 0 10%;
+  text-align: justify;
+}
+.logo{
+  font-size: 30px;
+}
+@media only screen and (max-width: 600px) {
+  .main_div{
+    width: 100%;
+    padding:0;
+  } 
+  .center_div{
+    margin: 20px;
+  }
+  .todointro{
+    width: 100%;
+  }
+  .logo{
+    font-size: 30px;
+  }
+  .inputbtn{
+    margin: 10px;
+  }.heading{
+    font-size: 28px;
+  }
 }
